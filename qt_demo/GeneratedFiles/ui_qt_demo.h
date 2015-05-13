@@ -79,16 +79,16 @@ public:
         pushButtonIp->setGeometry(QRect(160, 40, 75, 23));
         pushButtonUdp = new QPushButton(centralWidget);
         pushButtonUdp->setObjectName(QStringLiteral("pushButtonUdp"));
-        pushButtonUdp->setGeometry(QRect(250, 40, 75, 23));
+        pushButtonUdp->setGeometry(QRect(340, 40, 75, 23));
         pushButtonTcp = new QPushButton(centralWidget);
         pushButtonTcp->setObjectName(QStringLiteral("pushButtonTcp"));
-        pushButtonTcp->setGeometry(QRect(340, 40, 75, 23));
+        pushButtonTcp->setGeometry(QRect(430, 40, 75, 23));
         pushButtonIcmp = new QPushButton(centralWidget);
         pushButtonIcmp->setObjectName(QStringLiteral("pushButtonIcmp"));
-        pushButtonIcmp->setGeometry(QRect(520, 40, 75, 23));
+        pushButtonIcmp->setGeometry(QRect(250, 40, 75, 23));
         pushButtonHttp = new QPushButton(centralWidget);
         pushButtonHttp->setObjectName(QStringLiteral("pushButtonHttp"));
-        pushButtonHttp->setGeometry(QRect(430, 40, 75, 23));
+        pushButtonHttp->setGeometry(QRect(520, 40, 75, 23));
         tableWidgetArp = new QTableWidget(centralWidget);
         if (tableWidgetArp->columnCount() < 9)
             tableWidgetArp->setColumnCount(9);

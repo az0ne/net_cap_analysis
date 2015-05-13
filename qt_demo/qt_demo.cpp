@@ -343,9 +343,3 @@ QString qt_demo::getDipPUdp(ip_header * ih, udp_header * uh){
 	return dipP.sprintf("%d.%d.%d.%d:%d", ih->daddr.byte1, ih->daddr.byte2, ih->daddr.byte3, ih->daddr.byte4, ntohs(uh->uh_dport));
 }
 
-void qt_demo::test01(){
-	ui.tableWidgetArp->setRowCount(1);
-	ui.tableWidgetArp->setItem(0, 0, new QTableWidgetItem("Jan"));
-	ui.tableWidgetArp->setRowCount(2);
-	ui.tableWidgetArp->setItem(1, 0, new QTableWidgetItem("Jan2"));
-}

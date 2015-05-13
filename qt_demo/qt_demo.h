@@ -28,12 +28,6 @@ public:
 	QString getSipPUdp(ip_header * ih, udp_header * uh);
 	QString getDipPUdp(ip_header * ih, udp_header * uh);
 
-	void alert(QString error){
-		QMainWindow * errWindow = new QMainWindow;
-		errWindow->setWindowTitle(error);
-	}
-	void test01();
-
 private slots:
 	void on_comboBox_currentIndexChanged(int index);
 	void on_pushButtonArp_clicked();
