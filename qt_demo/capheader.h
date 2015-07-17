@@ -86,4 +86,22 @@ typedef struct arp_header{
 	ip_address daddr;					/*destination ip*/
 };
 
+typedef struct image{
+	int size = 0;
+	int seg = 0;
+	bool writing = false;
+	u_int ack;
+	int imgType=0; //1->jpg , 2->png
+	char filename[_MAX_PATH];
+};
+
+typedef struct file{
+	int seg = 0;
+	bool writing = false;
+	u_int ack;
+	char  fileType[20]; //1->jpg , 2->png
+	char filename[_MAX_PATH];
+	int allSize = 0;
+	int size = 0;
+};
 #endif // PHEADER_H_INCLUDED

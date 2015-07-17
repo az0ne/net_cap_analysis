@@ -19,7 +19,7 @@
      <rect>
       <x>70</x>
       <y>10</y>
-      <width>601</width>
+      <width>631</width>
       <height>22</height>
      </rect>
     </property>
@@ -40,7 +40,7 @@
    <widget class="QPushButton" name="pushButtonStart">
     <property name="geometry">
      <rect>
-      <x>700</x>
+      <x>730</x>
       <y>10</y>
       <width>51</width>
       <height>23</height>
@@ -53,7 +53,7 @@
    <widget class="QPushButton" name="pushButtonStop">
     <property name="geometry">
      <rect>
-      <x>780</x>
+      <x>810</x>
       <y>10</y>
       <width>51</width>
       <height>23</height>
@@ -79,7 +79,7 @@
    <widget class="QPushButton" name="pushButtonIp">
     <property name="geometry">
      <rect>
-      <x>160</x>
+      <x>150</x>
       <y>40</y>
       <width>75</width>
       <height>23</height>
@@ -92,7 +92,7 @@
    <widget class="QPushButton" name="pushButtonUdp">
     <property name="geometry">
      <rect>
-      <x>340</x>
+      <x>310</x>
       <y>40</y>
       <width>75</width>
       <height>23</height>
@@ -105,7 +105,7 @@
    <widget class="QPushButton" name="pushButtonTcp">
     <property name="geometry">
      <rect>
-      <x>430</x>
+      <x>390</x>
       <y>40</y>
       <width>75</width>
       <height>23</height>
@@ -118,7 +118,7 @@
    <widget class="QPushButton" name="pushButtonIcmp">
     <property name="geometry">
      <rect>
-      <x>250</x>
+      <x>230</x>
       <y>40</y>
       <width>75</width>
       <height>23</height>
@@ -131,7 +131,7 @@
    <widget class="QPushButton" name="pushButtonHttp">
     <property name="geometry">
      <rect>
-      <x>520</x>
+      <x>470</x>
       <y>40</y>
       <width>75</width>
       <height>23</height>
@@ -441,7 +441,7 @@
    <widget class="QLabel" name="labelStatus">
     <property name="geometry">
      <rect>
-      <x>700</x>
+      <x>730</x>
       <y>40</y>
       <width>131</width>
       <height>21</height>
@@ -493,6 +493,141 @@
      <string>0</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="pushButtonImage">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>40</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>图片</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidgetImage">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>901</width>
+      <height>461</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>461</height>
+     </size>
+    </property>
+    <property name="editTriggers">
+     <set>QAbstractItemView::NoEditTriggers</set>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>100</width>
+      <height>50</height>
+     </size>
+    </property>
+    <attribute name="verticalHeaderDefaultSectionSize">
+     <number>50</number>
+    </attribute>
+    <attribute name="verticalHeaderMinimumSectionSize">
+     <number>50</number>
+    </attribute>
+    <column>
+     <property name="text">
+      <string>图片</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>发送端ip</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>发送端端口</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>接收端ip</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>接收端端口</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>图片大小(bytes)</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QPushButton" name="pushButtonFile">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>40</y>
+      <width>71</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>其他文件</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidgetFile">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>901</width>
+      <height>461</height>
+     </rect>
+    </property>
+    <property name="editTriggers">
+     <set>QAbstractItemView::NoEditTriggers</set>
+    </property>
+    <column>
+     <property name="text">
+      <string>文件名</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>文件类型</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>发送端ip</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>发送端端口</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>接收端ip</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>接收端端口</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>文件大小(bytes)</string>
+     </property>
+    </column>
+   </widget>
    <zorder>comboBox</zorder>
    <zorder>labelDev</zorder>
    <zorder>pushButtonStart</zorder>
@@ -513,6 +648,10 @@
    <zorder>tableWidgetIp</zorder>
    <zorder>tableWidgetUdp</zorder>
    <zorder>tableWidgetTcp</zorder>
+   <zorder>pushButtonImage</zorder>
+   <zorder>tableWidgetImage</zorder>
+   <zorder>pushButtonFile</zorder>
+   <zorder>tableWidgetFile</zorder>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">

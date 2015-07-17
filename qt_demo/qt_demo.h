@@ -1,7 +1,9 @@
 #ifndef QT_DEMO_H
 #define QT_DEMO_H
 
+#include<direct.h>
 #include <QtWidgets/QMainWindow>
+#include <QtCore/QDir>
 #include "ui_qt_demo.h"
 #include "capheader.h"
 
@@ -38,6 +40,14 @@ private slots:
 	void on_pushButtonIcmp_clicked();
 	void on_pushButtonStart_clicked();
 	void on_pushButtonStop_clicked();
+	void on_pushButtonImage_clicked();
+	void on_pushButtonFile_clicked();
+	void arpProcessor(arp_header * ah);
+	void ipProcessor(ip_header * ih);
+	void tcpProcessor(ip_header * ih, tcp_header * th);
+	void httpProcessor(ip_header * ih, tcp_header * th);
+	void udpProcessor(ip_header * ih, udp_header * uh);
+	void icmpProcessor(ip_header * ih, icmp_header * icmp_h);
 private:
 	Ui::qt_demoClass ui;
 
@@ -46,6 +56,7 @@ private:
 	pcap_if_t* d; // device you chose
 	pcap_t* adhandle;
 	char errbuf[PCAP_ERRBUF_SIZE]; //error buffer
+	char source[PCAP_BUF_SIZE];
 	int i = 0;
 	int inum;
 	int packetNum = 0;
@@ -53,9 +64,12 @@ private:
 	const u_char * pkt_data; /* pcap data */
 	int res;
 	bool onOff = false; //power switch identify
-
-
-	int num_arp, num_ip, num_icmp, num_udp, num_tcp, num_http;
+	bool find_image = false;
+	bool find_file = false;
+	FILE *fp_image,*fp_file;
+	image img;
+	file fil;
+	int num_arp, num_ip, num_icmp, num_udp, num_tcp, num_http,num_image,num_file;
 
 };
 
